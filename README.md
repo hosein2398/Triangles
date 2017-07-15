@@ -8,8 +8,8 @@ Canvas library to create triangles on your background.
 
 + Load the library on the page you want to use.
 + Create a canvas with id of 'can' .   
-```  <canvas id="canv"></canvas> ```
-Remember to load the library after tag.
+```  <canvas id="canv"></canvas> ```    
+(Remember to load the library after tag)
 + Enjoy your background.
 
 ## Development
