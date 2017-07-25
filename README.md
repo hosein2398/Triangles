@@ -12,6 +12,9 @@ Canvas library to create triangles on your background.
 (Remember to load the library after tag)
 + Enjoy your background.
 
-## Development
-
-A lot of new patterns are under construction and will be added soon.
+## Effects
+Currently there are 6 effects available to use. You can only pass in the number of effect you want to use like so:
+```JS 
+Triangles(4);
+```   
+List of effects are could be seen [here](https://hosein2398.github.io/triangles/).
