@@ -17,4 +17,4 @@ Currently there are 6 effects available to use. You can only pass in the number 
 ```JS 
 Triangles(4);
 ```   
-List of effects are could be seen [here](https://hosein2398.github.io/triangles/).
+List of effects could be seen [here](https://hosein2398.github.io/triangles/).
