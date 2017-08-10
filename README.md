@@ -10,6 +10,12 @@ Canvas library to create triangles on your background.
 + Create a canvas with id of 'can' .   
 ```  <canvas id="canv"></canvas> ```    
 (Remember to load the library after tag)
++ Create a script like:
+```  
+<script>
+Triangles();
+</script>
+ ```   
 + Enjoy your background.
 
 ## Effects
