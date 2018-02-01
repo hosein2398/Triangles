@@ -24,7 +24,6 @@
         }
         var overarray;
         for (eff in number_for_effect) {
-            console.log(number_for_effect[eff])
             if (eff == effect) {
                 overarray = number_for_effect[eff];
 
@@ -33,9 +32,14 @@
         if (typeof effect === 'undefined') {
             overarray = number_for_effect[0];
         }
-        console.log(overarray);
-        var const_height = parseInt(window.innerHeight / 12);
-        console.log(const_height + "wee" + window.innerWidth);
+
+        /*
+         *Trying to calculate proper number of triangles we should put in the page 
+         * 
+         */
+        var constHeight = parseInt(window.innerHeight / 45);
+        var constWidth = parseInt(window.innerWidth / 75)*2;
+        var calculatedNumber = constHeight * constWidth;
         var c = document.getElementById("canv");
         c.width = window.innerWidth;
         c.height = window.innerHeight;
@@ -50,8 +54,7 @@
             var start_x_3_even = -35;
             var y_position = 0;
             var counter = 0;
-            console.log(const_height + "wee" + window.innerWidth);
-            for (var i = 1; i < 890; i++) {
+            for (var i = 1; i < calculatedNumber; i++) {
                 if (i % 2 && i !== 1) {
                     $.beginPath();
                     $.fillStyle = "rgba(" + parseInt(Math.random() * 255) + "," + parseInt(Math.random() *
@@ -67,11 +70,8 @@
                     start_x_1 += 75;
                     start_x_2 += 75;
                     start_x_3 += 75;
-                    // console.log(window.innerWidth)
-                    // console.log(start_x_1)
                     if (start_x_1 > window.innerWidth && counter < 14) {
                         counter++;
-                        // alert("alerted!");
                         if (overarray[12]) {
                             y_position += overarray[12].y_position;
                         } else {
